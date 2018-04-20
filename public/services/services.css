@@ -1,0 +1,42 @@
+.services-container{
+  background-color: rgba(215, 200, 165, 1);
+  color: rgba(100, 100, 100, 1);
+}
+
+.services-container h1{
+  text-align: center;
+  padding: 2.5% 0 1.5% 0;
+  letter-spacing: 2px;
+}
+
+.service-list{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.service-list li{
+  text-decoration: none;
+  height: 350px;
+  padding: 0px;
+}
+
+.service-item{
+  height: 250px;
+  background-size: cover;
+  width: calc(95%);
+  margin-right: auto;
+  margin-left: auto;
+  background-position: center;
+  margin-top: 10px;
+
+}
+
+.service-item p{
+  text-align: center;
+  padding-top: 10px;
+  background-color: rgba(245, 225, 180, 1);
+  width: calc(95%);
+  height: 70px;
+  margin-right: auto;
+  margin-left: auto;
+}

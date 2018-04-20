@@ -1,0 +1,46 @@
+
+.footer-nav{
+  position: fixed;
+  bottom : 0px;
+  width: 100%;
+}
+
+.site-info{
+  display:block;
+  background-color: rgba(150,150,150,1);
+  background-color: rgba(50, 50, 50, 1);
+  height: 50px;
+  padding-top: 15px;
+  margin-top: 40px;
+
+}
+
+.copyright-column, .author-column{
+  color: rgba(245, 225, 180, 1);
+  font-family: helvetica;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.copyright-column{
+  float: left;
+  padding-left: 10px;
+}
+
+.copyright-column>a{
+  padding: 15px;
+  color: rgba(245, 225, 180, 1)
+}
+
+.author-column{
+  float: right;
+  padding-right: 10px;
+}
+
+.author-column a{
+  color: rgba(245, 225, 180, 1);
+}
+
+.author{
+  text-align: right;
+}

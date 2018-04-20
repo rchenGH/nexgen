@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+.row{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-row{
+  justify-content:space-between;
+  width: 100%;
+}
+
+.content{
+  padding: 0%;
+}
+
+.page-container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parallax-mirror{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-container{
+  padding: 0;
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+  background-attachment:fixed;
+  margin-top: 60px;
+  padding: 0px;
+  margin-right: 0px;
+  margin-left: 0
+}
+
+.banner-text{
+  color: rgba(255, 132, 59, 0.7);
+  font-size: 24px;
+  text-align: center;
+  margin-top: 375px;
+  letter-spacing: 2px;
+  animation-name: text-animation;
+  animation-play-state: running;
+  animation-duration: 1s;
+}
+
+@keyframes text-animation{
+  0%{
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+
+.hand, .price, .quality{
+  width: auto;
+  max-height: 450px;
+  height: 25vw;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  animation-name: home-icons;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes home-icons{
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+.hand img, .price img, .quality img{
+  height: 12vw;
+  width: 12vw;
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 150px;
+  max-height: 150px;
+  margin-top: 50px;
+}
+
+.hand-text, .quality-text{
+  color: rgba(50, 50, 50, 1);
+  padding-top: 10%;
+  letter-spacing: 2px;
+}
+
+.price-text{
+  color: rgba(255, 132, 59, 1);
+  padding-top: 10%;
+  letter-spacing: 2px;
+}
+
+.spacer{
+  height: 50px;
+  background-color: rgba(245, 225, 180, 1);
+}
+
+.active{
+  background-color: rgba(245, 245, 245, 1); !important;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .banner {
+    max-height: 300px;
+  }
+  .hand img, .price img, .quality img{
+    height: 120px;
+    width: 120px;
+  }
+
+  .banner-text{
+    margin-top: 175px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hand, .price, .quality{
+    width: 100%;
+  }
+
+
+}

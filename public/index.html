@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>NexGen Environmental Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich|Baloo|Squada+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="home/home.css">
+    <link rel="stylesheet" type="text/css" href="navigation/navigation.css">
+    <link rel="stylesheet" type="text/css" href="services/services.css">
+    <link rel="stylesheet" type="text/css" href="contact/contact.css">
+    <link rel="stylesheet" type="text/css" href="footer/footer.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBOISkx4mIm1JSWY7GEkzi0Okbu5siBqWk",
+        authDomain: "nexgen-sample.firebaseapp.com",
+        databaseURL: "https://nexgen-sample.firebaseio.com",
+        projectId: "nexgen-sample",
+        storageBucket: "nexgen-sample.appspot.com",
+        messagingSenderId: "130186004779"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body data-spy='scroll' data-target="#navScrollspy">
+    <div class="page-container">
+
+      <nav class="navbar-expand-md" id="navigation">
+        <a class="navbar-brand brand" id="header" href="index.html"><img src="navigation/logo.png" id="nav-logo"></a></img>
+        <button id="menu-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          MENU
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" id="navScrollspy">
+
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">HOME</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#services-section" class="nav-link">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact-section" class="nav-link">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <!-- Home Section -->
+
+    <div class="container-fluid home-container">
+      <div class="row top-row">
+        <div class="col-sm-12 col-md-12 col-xs-12 col-lg-12 banner"  class="banner" parallax-window style="min-width:none" data-parallax="scroll"
+        data-image-src="home/images/container3.jpg" data-z-index="0">
+        <div class="col-md-12 col-lg-12">
+          <h1 class="banner-text">COMPREHENSIVE ENVIRONMENTAL SOLUTIONS</h1>
+        </div>
+      </div>
+    </div>
+
+      <div class="content container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 hand"
+            style="background-image: url(home/images/shaking-hands2.jpg)";>
+            <img src="home/images/handshake-black.png"/>
+            <p class="hand-text">GREAT CUSTOMER SERVICE</p>
+          </div>
+          <div class="col-sm-12 col-md-4 price"
+          style="background-image: url(home/images/for-pricing2.jpg)";>
+            <img src="home/images/pricing-orange.png"/>
+            <p class="price-text">COMPETITIVE PRICING</p>
+          </div>
+          <div class="col-sm-12 col-md-4 quality"
+          style="background-image: url(home/images/service-quality2.jpg)";>
+            <img src="home/images/quality-seal-black.png"/>
+            <p class="quality-text">QUALITY PROVISIONS</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Home Section End -->
+
+    <div class="spacer">
+    </div>
+
+    <!-- Services Section -->
+    <article class="container-fluid services-container">
+      <div id="services-section">
+        <h1>SERVICES</h1>
+        <ul class="service-list row">
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/sediment.jpg)";>
+            </div>
+            <p>Sediment</p>
+          </li>
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/ph_adjustment.jpg)";>
+            </div>
+            <p>PH Adjustment Systems</p>
+          </li>
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/groundwater.jpg)";>
+          </div>
+          <p>Contaminated Ground Water Treatment</p>
+          </li>
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/wheel.jpg)";>
+            </div>
+            <p>Wheel Washes</p>
+          </li>
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/dewatering.jpg)";>
+            </div>
+            <p>Dewatering</p>
+          </li>
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/pump.jpg)";>
+            </div>
+            <p>Pump Rentals & Sales</p>
+          </li>
+          <li class="service-item col-sm-6 col-md-6 col-lg-3">
+            <div class="service-item" style="background-image: url(services/images/vacuum-truck.jpg)";>
+            </div>
+            <p>Vacuum Trucks</p>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <!-- Services Section End -->
+
+
+
+    <!-- Contact Section -->
+    <div class="container-fluid contact-container">
+      <h1>CONTACT US</h1>
+      <div class="row">
+
+        <div id="contact-section" class="col-sm-6 col-md-6">
+
+          <table class="contact-table">
+            <tr class="contact-row">
+              <td class="contact-icon">
+                <img src="contact/images/name.png"/>
+              </td>
+              <td class="contact-column">Herman Grewal</td>
+            </tr>
+            <tr class="contact-row">
+              <td class="contact-icon">
+                <img src="contact/images/address.png"/>
+              </td>
+              <td class="contact-column">165 Street | Surrey BC V3S 2V2</td>
+            </tr>
+            <tr class="contact-row">
+              <td class="contact-icon">
+                <img src="contact/images/email.png"/>
+              </td>
+              <td class="contact-column">Herman@nexgenenv.com</td>
+            </tr>
+          </table>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <article class="form-background">
+
+          <form>
+            <div class="contact-header-background" style="background-image: url(contact/images/truck.jpg)";>
+              <p class="contact-header-text">ENQUIRIES</p>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="input_first_name"  placeholder="FIRST NAME">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="input_last_name" placeholder="LAST NAME">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" id="input_phone" placeholder="PHONE">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input type="text" id="input_email" class="form-control" placeholder="E-MAIL">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <textarea  type="text" id="input_message" class="form-control" placeholder="MESSAGE"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-12 button-column">
+                <button type="button" id="form-submit">SUBMIT</button>
+              </div>
+            </div>
+            </form>
+          </article>
+
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section End -->
+    <div class="footer-nav">
+      <div class ="site-info">
+        <div class="copyright-column">NexGen Environmental Services 2018</div>
+        <div class="author-column">
+          Site by <a href="https://www.rchen.ca">Raymond Chen</a>
+        </div>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
