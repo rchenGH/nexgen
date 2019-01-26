@@ -10,11 +10,22 @@
   border: 1px black solid;
 }
 
+.contact-container-row{
+  padding-top: 10px;
+}
+
+.contact-container h1{
+  text-align: center;
+  padding: 3% 0 2% 0;
+  letter-spacing: 2px;
+}
+
 .contact-container table {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
 }
+
 
 .contact-row{
   height: 50px;
@@ -113,14 +124,14 @@ textarea[type=text]{
   height: 90px;
 }
 
-input[type="text"], textarea[type=text]{
+input[type="text"], input[type="email"], textarea[type=text]{
   background-color: rgba(255, 132, 59, 0.25);
   color: rgba(255, 132, 59, 1);
   border-color: rgba(25, 150, 170, 0);
   border-radius: 0;
 }
 
-input[type="text"]::-webkit-input-placeholder , textarea[type=text]::-webkit-input-placeholder{
+input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder  , textarea[type=text]::-webkit-input-placeholder{
   color: rgba(150, 150, 150, 1);
   font-size: 0.8em;
   font-family: 'Lato', sans-serif;
@@ -129,7 +140,7 @@ input[type="text"]::-webkit-input-placeholder , textarea[type=text]::-webkit-inp
 
 
 
-input[type=text]:focus, textarea[type=text]:focus {
+input[type=text]:focus, input[type=email]:focus, textarea[type=text]:focus {
   background-color: rgba(255, 132, 59, 0.5);
   color: rgba(255, 132, 59, 1);
   border-width:normal;

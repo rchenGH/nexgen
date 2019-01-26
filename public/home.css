@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgb(50, 50, 50, 1);
 }
 
 .row{
@@ -24,38 +24,42 @@ body {
   margin-right: auto;
 }
 
-.parallax-mirror{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .home-container{
   padding: 0;
 }
 
 .banner {
-  height: 500px;
+  max-height: 600px;
+  height: auto;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size:contain;
   background-attachment:fixed;
-  margin-top: 60px;
   padding: 0px;
   margin-right: 0px;
-  margin-left: 0
+  margin-left: 0;
+  animation-name: banner;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-duration: 0s;
+  transition: 0s;
+  transition-timing-function: ease-in-out;
 }
 
-.banner-text{
-  color: rgba(255, 132, 59, 0.7);
-  font-size: 24px;
-  text-align: center;
-  margin-top: 375px;
-  letter-spacing: 2px;
-  animation-name: text-animation;
-  animation-play-state: running;
-  animation-duration: 1s;
+.carousel-caption{
+  margin-bottom: 225px;
+  color: rgba(240, 240, 240, 0.8)
+}
+
+.carousel-caption p{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes text-animation{
@@ -71,9 +75,9 @@ body {
 
 .hand, .price, .quality{
   width: auto;
-  max-height: 450px;
+  max-height: 600px;
   height: 25vw;
-  min-height: 300px;
+  min-height: 275px;
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -122,22 +126,51 @@ body {
 
 .active{
   background-color: rgba(245, 245, 245, 1); !important;
+}
 
+
+@media only screen and (min-width: 1600px) {
+  .banner {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .banner {
+    width: auto;
+    max-height: 650px;
+  }
+
+  .carousel-caption{
+    margin-bottom: 200px;
+    color: rgba(240, 240, 240, 0.8)
+  }
+}
+
+
+@media only screen and (max-width: 1000px){
+  .carousel-caption{
+    margin-bottom: 225px;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .carousel-caption{
+    margin-bottom: 250px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  .banner {
-    max-height: 300px;
+
+  .banner{
+    margin-top: 50px;
   }
+
   .hand img, .price img, .quality img{
     height: 120px;
     width: 120px;
   }
 
-  .banner-text{
-    margin-top: 175px;
-    font-size: 20px;
-  }
 }
 
 @media only screen and (max-width: 576px) {

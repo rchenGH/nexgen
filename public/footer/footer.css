@@ -3,15 +3,16 @@
   position: fixed;
   bottom : 0px;
   width: 100%;
+  background-color: rgba(50, 50, 50, 1);
+
 }
 
 .site-info{
   display:block;
-  background-color: rgba(150,150,150,1);
   background-color: rgba(50, 50, 50, 1);
   height: 50px;
   padding-top: 15px;
-  margin-top: 40px;
+  padding-bottom: 15px;
 
 }
 

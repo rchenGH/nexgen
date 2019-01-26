@@ -1,14 +1,18 @@
 nav {
   background: none;
   position: fixed;
-  background-color: rgba(50, 50, 50, 1);
+  background-color: rgba(50, 50, 50, 0.875);
   top:0;
   left:0;
   right:0;
   width: 100%;
   z-index: 20;
   transition: 0.35s all ease;
-  height: 120px;
+  height: 90px;
+}
+
+.collapsing{
+  width: 100%;
 }
 
 .collapsing a{
@@ -19,14 +23,14 @@ nav {
 .active{
   background-color: rgba(255, 132, 59, 0.2); !important;
   color: rgba(50, 50, 50, 1);
+  height: auto;
 }
 
 
 nav ul {
   list-style: none;
-  transition: 0.35s all ease;
+  transition: 0.55s all ease;
   background-color: rgba(255, 132, 59, 1);
-
   height: 70px;
  }
 
@@ -37,7 +41,6 @@ nav li {
   margin-right: auto;
   margin-left: auto;
   padding: 0px;
-
 }
 
 .nav-item{
@@ -48,7 +51,7 @@ nav li {
   animation-name: link-item-hover;
   animation-play-state: running;
   animation-fill-mode: forwards;
-  animation-duration: 0.2s;
+  animation-duration: 0.35s;
   background-color: rgba(245, 225, 180, 1);
   transition-timing-function: ease-in-out;
 }
@@ -63,6 +66,7 @@ nav li {
   font-size: 14px;
   letter-spacing: 2px;
   color: rgba(50, 50, 50, 1);
+  padding: 2px;
 }
 
 .nav-link:hover{
@@ -72,9 +76,16 @@ nav li {
 
 
 #nav-logo{
-  height: 70px;
+  height: 40px;
   width: auto;
   margin-left: 10vw;
+}
+
+#nav-logo1{
+  display: none;
+  height: 40px;
+  width: auto;
+  margin-left: 0px;
 }
 
 .navbar-nav{
@@ -112,8 +123,9 @@ nav li {
 }
 
 .scrolled .collapsing{
-  padding-top: 40px;
-  width: 100%;
+  /* padding-top: 40px; */
+  width: 100vw;
+  height: auto;
 }
 
 .scrolled .collapsing a{
@@ -125,7 +137,7 @@ nav li {
   background-color: rgba(50, 50, 50, 1);
   margin-right: 10px;
   width: auto;
-  margin-top: -40px;
+  /* margin-top: -40px; */
   height: 40px;
 }
 
@@ -141,10 +153,19 @@ nav li {
   color: rgba(255, 132, 59, 1);
 }
 
-.scrolled #nav-logo{
-  height: 40px;
+.scrolled #navScrollspy{
   width: auto;
-  margin-left: 0px;
+  margin-left: auto;
+  width: auto;
+  margin-right: 10px;
+  margin-top: -30px;
+}
+
+.scrolled #nav-logo{
+  height: 30px;
+  width: auto;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 #menu-button{
@@ -169,16 +190,17 @@ nav li {
 @media only screen and (max-width: 767px) {
 
   nav{
-    height: 95px;
+    height: 54px;
+    background-color: rgba(50, 50, 50, 1);
   }
 
   #navScrollspy{
     text-align: center;
     width: 100%;
-    margin-right: 0%;
-    margin-left: 0%;
+    margin-right: auto;
+    margin-left: auto;
     height: auto;
-    padding: 0%;
+    padding: 0 0 15px 0;
     background-color: rgba(50, 50, 50, 1);
   }
 
@@ -190,6 +212,16 @@ nav li {
     margin-right: 0vw;
   }
 
+  .scrolled #navScrollspy{
+    text-align: center;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    padding: 0 0 15px 0;
+    background-color: rgba(50, 50, 50, 1);
+  }
+
   .scrolled .collapsing{
     height: 20px;
   }
@@ -199,10 +231,6 @@ nav li {
     /* transition: 0.35s all ease; */
   }
 
-  .scrolled #nav-logo{
-    margin-left: 10vw;
-    height: 40px;
-  }
 
   nav li {
     width: 100%;
@@ -234,8 +262,23 @@ nav li {
   #menu-button{
     margin: 10px 7.5px 10px 10px;
   }
+  #nav-logo{
+    display: none;
+  }
+  #nav-logo1{
+    display:inline;
+    height: 40px;
+    width: auto;
+    margin-left: 10vw;
+    margin-top: 5px;
+  }
+}
 
-
-
-
+@media only screen and (max-width: 576px) {
+  #nav-logo1{
+    height: 30px;
+    width: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
